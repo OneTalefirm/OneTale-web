@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
@@ -748,4 +749,756 @@ span  {
     .contact form .input-box input {
         width: 100%;
     }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+}
+
+:root {
+    --bg-color: #f0f8ff; /* Light bluish background */
+    --snd-bg-color: #d9eaff; /* Softer blue secondary background */
+    --text-color: #333; /* Dark grey text for readability */
+    --main-color: #0077cc; /* Deep blue for contrast */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+}
+
+.header  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    user-select: none;
+    outline: none;
+}
+
+.logo  {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: default;
+    user-select: none;
+    outline: none;
+}
+
+.navbar a  {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 700;
+}
+
+.navbar a:hover,
+.navbar a.active  {
+    color: var(--text-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem; /* Font size for the icon */
+    display: flex; /* Make it a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    cursor: pointer; /* Change cursor on hover */
+    padding: 1rem; /* Add padding for better touch area */
+    color: var(--text-color); /* Set the color of the icon */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+    user-select: none;
+    outline: none;
+}
+
+#menu-icon:hover {
+    color: var(--main-color); /* Change color on hover */
+    transform: scale(1.1); /* Slightly scale the icon on hover */
+}
+
+
+.home-content h3:nth-of-type(2)  {
+    margin-bottom: 2rem;
+}
+
+span  {
+    color: var(--main-color);
+}
+
+.home-content h1  {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    user-select: none;
+    outline: none;
+}
+.home {
+    display: flex;
+    justify-content: space-between; /* Spread items apart */
+    align-items: center; /* Center vertically */
+    user-select: none;
+    outline: none;
+}
+
+.home-img {
+    margin-left: auto; /* Push to the right */
+    display: flex; /* Maintain flex properties */
+    justify-content: center; /* Center content horizontally */
+    align-items: right; /* Align items to the right */
+}
+
+
+.home-img img  {
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+    margin-top:30px;
+    margin-left: 40px;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    z-index: 10;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+/* Section Styling */
+.section {
+    padding: 8rem 5%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* What We Do Section */
+#what-we-do {
+    padding: 10rem 5%;
+    text-align: center; /* Center aligns everything */
+    user-select: none;
+    outline: none;
+}
+
+/* Centered Section Title */
+.section-title {
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-align: center; /* Ensures title is centered */
+}
+
+/* Main Layout */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+/* Cards Container - Now Vertical */
+.cards-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 2.5rem;
+    flex: 1;
+}
+
+/* Individual Cards */
+.info-card {
+    background: #2c3e50; /* Darker Blue-Gray */
+    padding: 4rem;
+    border-radius: 18px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 8px solid var(--main-color); /* Accent border */
+    color: #ffffff;
+    width: 100%;
+    max-width: 650px; /* Increased card size */
+}
+
+/* Hover Effect */
+.info-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    background: #1b2733;
+}
+
+/* Card Titles */
+.info-card h4 {
+    font-size: 2.6rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.8rem;
+    font-weight: 700;
+}
+
+/* List Items */
+.info-card .list-marked li {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #ffffff;
+}
+
+/* Video Section */
+.video-container {
+    flex: 1;
+    max-width: 75%; /* Increased Width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 1200px; /* Massive Video Size */
+    max-height: 750px; /* Increased Height */
+    border-radius: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .info-card {
+        max-width: 600px;
+    }
+
+    .video-container video {
+        max-width: 1050px;
+        max-height: 650px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .info-card {
+        max-width: 550px;
+    }
+
+    .video-container video {
+        max-width: 900px;
+        max-height: 550px;
+    }
+}
+
+@media (max-width: 992px) {
+    #what-we-do .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards-container {
+        align-items: center;
+    }
+
+    .info-card {
+        max-width: 500px;
+    }
+
+    .video-container {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+
+    .video-container video {
+        max-width: 100%;
+        max-height: 500px;
+    }
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: var(--bg-color);
+    text-align: center;
+    padding: 8rem 5% 10rem;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    outline: none;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 450px; /* Restricts height so it stays within the section */
+    position: relative;
+    margin-top: 5rem;
+}
+
+.testimonial-card {
+    width: 28%;
+    height: 350px; /* Reduced size to fit within the section */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    position: absolute;
+    opacity: 0.9;
+    transform: scale(0.9);
+    border-radius: 15px;
+    background: rgba(0, 102, 204, 0.9); /* Solid Blue */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Positions for rotation */
+.testimonial-card:nth-child(1) {
+    transform: translateX(-120%) scale(0.85);
+    z-index: 1;
+}
+
+.testimonial-card:nth-child(2) {
+    transform: scale(1);
+    z-index: 2;
+    opacity: 1;
+}
+
+.testimonial-card:nth-child(3) {
+    transform: translateX(120%) scale(0.85);
+    z-index: 1;
+}
+
+/* Hover effect */
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 102, 204, 0.6);
+}
+
+/* Inner quote card design */
+.quote-modern {
+    background: transparent;
+    padding: 2rem;
+    border-radius: 15px;
+    color: white; /* Text color */
+    text-align: center;
+}
+
+.quote-modern:hover {
+    transform: scale(1.05);
+}
+
+.quote-modern-avatar {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.quote-modern-main p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+#clients {
+    background: var(--snd-bg-color);
+    text-align: center;
+    padding: 5rem 0;
+    user-select: none;
+    outline: none;
+}
+
+#clients h3 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: var(--main-color);
+}
+
+.clients-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: nowrap; /* Ensures they stay in one line */
+    overflow-x: auto; /* Allows scrolling if necessary */
+    padding: 1rem;
+    user-select: none;
+    outline: none;
+}
+
+.clients-container a {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease-in-out;
+}
+
+.clients-container img {
+    height: 80px;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease, filter 0.3s ease-in-out;
+}
+
+.clients-container img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+
+.contact h2 {
+    margin-bottom: 3rem;
+    user-select: none;
+    outline: none;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    user-select: none;
+    outline: none;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--snd-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #60E1CB;
+    padding: 40px 80px;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+    display: flex;
+    flex-direction: column; /* Keeps "One Tale" below the logo */
+    align-items: flex-start; /* Aligns to the left */
+    max-width: 250px;
+}
+
+.footer-logo-top {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
+
+.footer-logo-top img {
+    width: 50px; /* Adjust size */
+    height: auto;
+}
+
+.footer-logo-top h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Footer Columns */
+.footer-columns {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* Language Selector */
+.language-selector {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language-selector span {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+/* Divider Line */
+.divider {
+    border-top: 1px solid black;
+    margin: 20px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/*BREAKPONT*/
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3%;
+    }
+
+    .services {
+        padding: 7rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display:block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar .active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-content {
+        order: 2;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-img img {
+        width: 90vw;
+        margin-top: 4rem;
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 617px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-img img {
+        width: 80vw;
+        margin-top: 8rem;
+    }
+
+    .about-img img {
+        width: 100vw;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+>>>>>>> ddd751b (Second Commit)
 }

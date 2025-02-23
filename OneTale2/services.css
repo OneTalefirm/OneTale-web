@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
     background-color: whitesmoke;
     color: black;
 }
@@ -23,6 +23,7 @@ body {
     list-style: none;
     display: flex;
     gap: 15px;
+    margin-right: 30px;
 }
 
 .nav-links li a {
@@ -33,12 +34,6 @@ body {
     font-weight: bold;
 }
 
-.quote-btn {
-    background-color: rgb(123,192,227);
-    padding: 8px 15px;
-    border-radius: 30px;
-    color: white;
-}
 
 .logo {
     display: flex; /* Aligns logo items properly */
@@ -57,8 +52,9 @@ body {
   }
   
   .logo-img {
-    width: 70px;  /* Adjust size */
+    width: 40px;  /* Adjust size */
     height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add space between logo and text */
   }
 
   .nav-links a:hover {
@@ -69,7 +65,7 @@ body {
 .hero {
     text-align: center;
     padding: 100px 20px; /* Increase padding for more height */
-    background: linear-gradient(to right, #b0e0e6, #d3d3d3); /* Light blue to grey gradient */
+    background-color: rgb(96, 225, 203);
     color: black;
     position: relative;
     z-index: 1;
@@ -99,17 +95,18 @@ body {
     padding: 60px 20px;
     background: linear-gradient(to right, #d3d3d3, #b0e0e6); /* Grey to light blue gradient */
     position: relative;
-    margin-top: -120px; /* Overlap the hero section */
+    margin-top: -70px; /* Overlap the hero section */
     z-index: 2;
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    max-width: 1100px;
+    max-width: 1230px;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Center heading and description */
 .services h2 {
+    margin-top: -30px; /* Overlap the hero section */
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 10px;
