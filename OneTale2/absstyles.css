@@ -1,0 +1,206 @@
+/* General Styles */
+@import url('https://fonts.cdnfonts.com/css/circular-std');
+body {
+    font-family: 'Circular Std', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #b0e0e6, #d3d3d3);
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #b0e0e6; /* Light blue */
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(18, 212, 34);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.quote-btn {
+    background-color: #5a9aad; /* Slightly darker blue */
+    padding: 8px 15px;
+    border-radius: 30px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+}
+
+.logo-img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+/* About Page Styles */
+.About-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #b0e0e6, #d3d3d3);
+    user-select: none;
+}
+
+.About {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.Text {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    user-select: none;
+}
+
+/* Vision & Mission Section */
+.vision-mission-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    background-color: #d3d3d3; /* Light grey */
+}
+
+.vision-mission-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vision-card, .mission-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #b0e0e6; /* Light blue */
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
+
+.vision-card:hover, .mission-card:hover {
+    transform: scale(1.05);
+}
+
+.vision-img, .mission-img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* The Team Section */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #d3d3d3; /* Light grey */
+    user-select: none;
+}
+
+.team-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.team-image {
+    width: 200px;
+    margin: 20px auto;
+}
+
+.team-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+.team-card {
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.linkedin-btn img {
+    width: 24px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .team-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .team-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5a9aad; /* Darker blue */
+    color: white;
+}
+
+.footer-socials a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.footer-socials a img:hover {
+    transform: scale(1.2);
+}
