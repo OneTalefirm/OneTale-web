@@ -50,6 +50,7 @@ body {
 .logo-img {
     width: 40px;
     height: auto;
+    margin-left: 5px;
 }
 
 .nav-links a:hover {
