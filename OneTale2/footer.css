@@ -4,6 +4,8 @@
     padding: 40px 80px;
     color: black;
     font-family: Arial, sans-serif;
+    margin-top: -100px; /* Moves footer up to overlap with team container */
+    z-index: 3; /* Adjust layering */
 }
 
 .footer-container {
@@ -40,9 +42,18 @@
 }
 
 .footer-logo p {
-    font-size: 14px;
+    font-size: 16px; /* Slightly larger for readability */
     margin-top: 10px;
+    width: 100%; /* Expands to fill available space */
+    max-width: 400px; /* Adjust width to control wrapping */
+    text-align: center;
+    line-height: 1.4; /* Controls spacing for exactly two lines */
+    white-space: normal;
+    word-wrap: break-word;
+    display: block;
+    font-weight: bolder;
 }
+
 
 /* Footer Columns */
 .footer-columns {

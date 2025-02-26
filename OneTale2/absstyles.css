@@ -83,22 +83,56 @@ body {
     margin: 0 auto;
 }
 
-/* Ribbon Shape at Top Left */
-.About-section .ribbon {
+/* Vector Image 1 - Behind About Us Text */
+.vector-image {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 150px;
-    z-index: 1;
+    top: 0vh; /* Adjusted for better responsiveness */
+    left: 0vw; /* Position relative to viewport */
+    width: 30vw; /* Adjust width dynamically */
+    max-width: 400px; /* Prevent it from becoming too large */
+    height: auto;
+    z-index: 0; /* Moves it behind the text */
+    opacity: 0.5; /* Increase visibility */
+    filter: contrast(1.2) brightness(1.1); /* Improve visibility */
+    pointer-events: none; /* Prevents interference with clicks */
 }
+
+/* Vector Image 2 - Bottom Right */
+.vector-image2 {
+    position: absolute;
+    bottom: 16vh;
+    right: 0vw;
+    width: 35vw;
+    max-width: 400px;
+    height: auto;
+    z-index: 0;
+    opacity: 0.8;
+    filter: contrast(1.2) brightness(1.1);
+    pointer-events: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .vector-image {
+        width: 50vw; /* Increase size on smaller screens */
+        left: 5vw;
+        top: 15vh;
+    }
+
+    .vector-image2 {
+        width: 50vw;
+        right: 5vw;
+        bottom: 5vh;
+    }
+}
+
 
 
 /* Ellipse shape at bottom left */
 .About-section::before {
     content: "";
     position: absolute;
-    bottom: -50px; /* Adjust position */
+    bottom: -10px; /* Adjust position */
     left: -100px; /* Shift left */
     width: 250px; /* Width of ellipse */
     height: 150px; /* Height of ellipse */
@@ -108,12 +142,16 @@ body {
 }
 
 /* Vision & Mission Section */
+/* Overlapping Vision & Mission Cards */
 .vision-mission-section {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 50px 20px;
-    background-color: #d3d3d3; /* Light grey */
+    padding: 15px 20px;
+    background-color: hsl(159, 72%, 62%); /* Light grey */
+    position: relative;
+    margin-top: -80px; /* Moves the section up to overlap */
+    z-index: 2;
 }
 
 .vision-mission-container {
@@ -131,6 +169,9 @@ body {
     text-align: center;
     background: #b0e0e6; /* Light blue */
     transition: transform 0.3s ease-in-out;
+    position: relative;
+    top: -50px; /* Moves cards up */
+    z-index: 3;
 }
 
 .vision-card:hover, .mission-card:hover {
@@ -144,22 +185,25 @@ body {
 
 /* The Team Section */
 
-/* Team Box - Outer Container */
+/* Team Box - Overlapping Vision & Mission Section */
 .team-box {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: -90px auto 40px; /* Negative margin pulls it up */
     padding: 30px;
     background: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 50px;
     text-align: center;
+    position: relative;
+    z-index: 4; /* Higher z-index so it stays above footer */
 }
+
 
 
 .team-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #d3d3d3; /* Light grey */
+    background-color: #36d6b56e; /* Light grey */
 }
 
 .team-container {
