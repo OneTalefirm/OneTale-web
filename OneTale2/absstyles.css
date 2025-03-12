@@ -148,7 +148,7 @@ body {
     justify-content: center;
     gap: 40px;
     padding: 15px 20px;
-    background-color: hsl(159, 72%, 62%); /* Light grey */
+    background-color: #36d6b56e; /* Light grey */
     position: relative;
     margin-top: -80px; /* Moves the section up to overlap */
     z-index: 2;
