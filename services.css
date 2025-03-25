@@ -1,0 +1,299 @@
+/* General Styles */
+@import url('https://fonts.cdnfonts.com/css/circular-std');
+body {
+    font-family: 'Circular Std', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color:  rgb(74, 221, 219);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+
+.logo {
+    display: flex; /* Aligns logo items properly */
+    align-items: center;
+    font-size: 20px; /* Fix the size */
+    font-weight: bold;
+    letter-spacing: 2px;
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Keeps logo and text close */
+    width: auto; /* Ensures it doesn’t take the whole navbar */
+  }
+  
+  .logo-img {
+    width: 40px;  /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add space between logo and text */
+  }
+
+  .nav-links a:hover {
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px; /* Increase padding for more height */
+    background-color: rgb(96, 225, 203);
+    color: black;
+    position: relative;
+    z-index: 1;
+    min-height: 125px; /* Ensure the section has enough height */
+}
+
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: -41px;
+}
+
+.hero p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    width: 85%;
+    max-width: none;
+    margin: 0px 100px;
+    text-align: justify;
+    padding: 0 1%;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 155px;
+    background: linear-gradient(to right, #d3d3d3, #56d9cd); /* Grey to light blue gradient */
+    position: relative;
+    margin-top: -70px; /* Overlap the hero section */
+    z-index: 2;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center heading and description */
+.services h2 {
+    margin-top: -30px; /* Overlap the hero section */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto 30px; /* Centers the text and adds spacing */
+}
+
+/* Services Container */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Service Card */
+.service-card {
+    background: white;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #60E1CB;
+    padding: 40px 80px;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-top: -9px; /* Moves footer up to overlap with services container */
+    z-index: 3; /* Adjust layering */
+    position: relative; /* Ensure proper layering */
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+    display: flex;
+    flex-direction: column; /* Keeps "One Tale" below the logo */
+    align-items: flex-start; /* Aligns to the left */
+    max-width: 250px;
+}
+
+.footer-logo-top {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+}
+
+.footer-logo-top img {
+    width: 50px; /* Adjust size */
+    height: auto;
+}
+
+.footer-logo-top h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.footer-logo p {
+    font-size: 16px; /* Slightly larger for readability */
+    margin-top: 10px;
+    width: 100%; /* Expands to fill available space */
+    max-width: 400px; /* Adjust width to control wrapping */
+    text-align: center;
+    line-height: 1.4; /* Controls spacing for exactly two lines */
+    white-space: normal;
+    word-wrap: break-word;
+    display: block;
+    font-weight: bolder;
+}
+
+
+/* Footer Columns */
+.footer-columns {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* Language Selector */
+.language-selector {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language-selector span {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+/* Divider Line */
+.divider {
+    border-top: 1px solid black;
+    margin: 20px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
